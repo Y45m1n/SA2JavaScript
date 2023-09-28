@@ -1,0 +1,103 @@
+/* Estilos gerais */
+body {
+    background-color: purple;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Tela de seleção de jogador */
+.selecionar-jogador {
+    background: #fff;
+    color: purple;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.30s ease;
+}
+
+.selecionar-jogador h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.selecionar-jogador button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.selecionar-jogador button:hover {
+    background: #4b0976;
+    transform: scale(0.9);
+}
+
+/* Tabuleiro do jogo */
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.casas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.casas button {
+    display: block;
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: purple;
+    cursor: pointer;
+}
+
+.casas button:hover {
+    background: #eee;
+}
+
+/* Mostrar de quem é a vez */
+.jogadorVez {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.JogarNovamente-button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* transition é para mexer o botão */
+}
+
+.JogarNovamente-button:hover {
+    background: #4b0976;
+    transition: background 0.3s ease;
+    transform: scale(0.9);
+}
